@@ -1,5 +1,13 @@
 :root {
-    --default-color: #2E2F42;
+    --navy-blue: #2E2F42;
+    --iris: #4D5AE5;
+    --cloud: #F4F4FD;
+    --cornflower: #E7E9FC;
+    --grey: rgba(46, 47, 66, 0.7);
+    --iris: #4D5AE5;
+    --light-slate: #8E8F99;
+    --slate: #434455;
+    --ocean: #404BBF;
 }
 .container {
     font-family: 'Roboto', sans-serif;
@@ -8,13 +16,19 @@
     margin: 0;
     padding:0%;
     width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 .header {
     display: flex;
     justify-content: space-around;
     padding-top: 25px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid --cornflower;
     background: #FFF;
 }
 .header-left {
