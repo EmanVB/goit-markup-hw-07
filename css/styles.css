@@ -1,6 +1,5 @@
 :root {
     --navy-blue: #2E2F42;
-    --iris: #4D5AE5;
     --cloud: #F4F4FD;
     --cornflower: #E7E9FC;
     --grey: rgba(46, 47, 66, 0.7);
@@ -8,6 +7,7 @@
     --light-slate: #8E8F99;
     --slate: #434455;
     --ocean: #404BBF;
+    --dairy: #FCFCFC;
 }
 .container {
     font-family: 'Roboto', sans-serif;
@@ -27,7 +27,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid --cornflower;
-    background: #FFF;
+    background: white;
 }
 .header-left {
     display: flex;
@@ -39,7 +39,7 @@
     font-family: Raleway;
     font-weight: 800;
     line-height: 1.17;
-    color: var(--default-color);
+    color: var(--navy-blue);
     transition: 250ms;
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,7 +99,7 @@
     color: var(--iris); 
 }
 .links {
-    color: var(--default-color);
+    color: var(--navy-blue);
     list-style-type: none;
     text-decoration: none;
 }
@@ -115,14 +115,14 @@
 .contacts-item .links {
     text-decoration: none;
     list-style-type: none;
-    color: #434455;
+    color: var(--slate);
 }
 .contacts .links:hover,
 .contacts .links:focus {
     color: var(--iris);
 }
 .contacts .links:active {
-    color: red;
+    color: var(--ocean);
 }
 .section {
     padding-top: 120px;
@@ -174,7 +174,7 @@
     padding-top: 24px;
     padding-right: 24px;
     border-radius: 4px;
-    background: #FCFCFC;
+    background: var(--dairy);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     position: relative;
 }
@@ -184,25 +184,33 @@
     flex-direction: column;
 }
 .modal-button {
+    color: var(--navy-blue);
     width: 24px;
     height: 24px;
     border: 1px solid #0000001A;
     flex-shrink: 0;
     border-radius: 50%;
-    background-color: #E7E9FC;
+    background-color: var(--cornflower);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     font-size: larger;
-    
+    transition: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover,
+.modal-button:active {
+    color: white;
+    background-color: var(--ocean);
 }
 .form-message {
     padding-top: 24px;
     padding-left: 16px;
     position: relative;
     margin: 0;
-    color: #2E2F42;
+    color: var(--navy-blue);
     font-size: 16px;
     font-family: Roboto;
     font-weight: 500;
@@ -215,21 +223,22 @@
 }    
 .form-input:hover .form-icon,
 .form-input:focus .form-icon {
-    fill: #4D5AE5;
+    fill: var(--iris);
 }
 .form-input:hover .form-box {
-    border: 1px solid #4D5AE5;
+    border-color: var(--iris);
 }
 .form-box:focus {
-    border: 3px solid #4D5AE5;
+    border-color: var(--iris);
+    outline: none;
 }
 .comment-input:hover .comment-box{
-    border-color: #4D5AE5;
+    border-color: var(--iris);
 }
 .form-modal {
     padding-top: 16px;
     gap: 8px;
-    color: #8E8F99;
+    color: var(--light-slate);
     font-size: 12px;
     font-family: Roboto;
     font-weight: 400;
@@ -254,8 +263,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-box:focus .form-icon{
-    border: 2px solid #4D5AE5;
-    fill: #4D5AE5;
+    border: 1px solid --iris;
+    fill: var(--iris);
 }
 .form-modal>label {
     text-align: left;
@@ -286,12 +295,13 @@
 }
 .comment-box:focus,
 .comment-box:hover {
-    border: 1px solid #4D5AE5;
+    border: 1px solid --iris;
+    outline: none;
 }
 .form-accept {
     display: flex;
     align-items: center;
-    color: #8E8F99;
+    color: var(--light-slate);
     font-size: 12px;
 }
 .form-accept-icon {
@@ -316,8 +326,8 @@
     outline: 2px solid black;
 }
 .form-accept .checkbox-accept:checked + .form-accept-icon {
-    background-color: #4D5AE5;
-    border-color: #4D5AE5;
+    background-color: var(--iris);
+    border-color: var(--iris);
     fill: white;
     outline: none;
     stroke: white;
@@ -332,7 +342,7 @@
     font-size: 16px;
     width: 169px;
     height: 56px;
-    background: #4D5AE5;
+    background: var(--iris);
     border-radius: 4px;
     transition: 250ms;
     box-shadow: 0px 4px 4px white;
@@ -341,7 +351,7 @@
 }
 .forms-submit:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background: red;
+    background: var(--ocean);
     cursor: pointer;
 }
 .is-hidden {
