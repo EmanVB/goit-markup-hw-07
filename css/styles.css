@@ -124,10 +124,12 @@
 .contacts .links:active {
     color: var(--ocean);
 }
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
 }
+
 .service-offer {
     background: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)), url("../images/people-office1.jpg");
     background-size: cover;
@@ -358,9 +360,6 @@
     pointer-events: none;
     opacity: 0;
 }
-.key-behaviors {
-    padding: 120px 156px
-}
 .icon-kb {
     border-radius: 4px;
     background: var(--cloud);
@@ -381,6 +380,9 @@
     gap: 24px;
     padding-inline-start: 0;
 }
+.key-behaviors-list>li{
+    width: 254px;
+}
 .key-behaviors-header {
     font-size: 20px;
     font-weight: 500;
@@ -390,10 +392,6 @@
     color: var(--slate);
     font-size: 16px;
     line-height: 1.5;
-}
-.services {
-    padding-top: 0px;
-    padding-bottom: 120px;
 }
 .services-header {
     font-size: 36px;
@@ -412,6 +410,12 @@
     justify-content: center;
     gap: 24px;
     padding-top: 72px;
+}
+.service-image{
+    width: 360px;
+    height: 300px;
+    display: block;
+    margin: 0;
 }
 .team-members {
     background-color: var(--cloud);
@@ -496,6 +500,9 @@
     line-height: 1.1;
     text-align: center;
     margin: 0;
+}
+.customers {
+    padding-bottom: 120px;
 }
 .footer-items {
     padding-top: 101.5px;
