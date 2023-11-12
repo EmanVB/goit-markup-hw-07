@@ -380,9 +380,6 @@ main{
     gap: 24px;
     padding-inline-start: 0;
 }
-.key-behaviors-list>li{
-    width: 254px;
-}
 .key-behaviors-header {
     font-size: 20px;
     font-weight: 500;
@@ -505,9 +502,10 @@ main{
     padding-bottom: 120px;
 }
 .footer-items {
+    /* display: flex;
     padding-top: 101.5px;
     padding-left: 156px;
-    padding-bottom: 100px;
+    padding-bottom: 100px; */
 }
 .footer-link {
     text-decoration: none;
@@ -528,9 +526,8 @@ main{
 } 
 footer {
     background-color: var(--navy-blue);
-    height: 312px;
-    align-items: center;
-    display: flex;
+    /* align-items: center;
+    display: flex; */
 }
 footer .footer-link:hover,
 footer .footer-link:active{
@@ -548,7 +545,6 @@ footer .footer-link:active{
 .social-media{
     padding-left: 120px;
     padding-top: 24px;
-    display: block;
 }
 .team-social-links-footer {
     display: flex;
@@ -717,4 +713,84 @@ footer .footer-link:active{
 }
 .proj-desc {
     margin: 0;
+}
+@media screen and (min-width: 769px) and (max-width: 1158px){
+    main {
+        gap:96px;
+    }
+    header{
+        align-items: center;
+        height: 78px;
+    }
+    .header-left {
+        gap: 120px;
+    }
+    .contacts {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .service-offer {
+        height: 436px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .services {
+        display: none;
+    }
+    .container {
+        width: 100vw;
+    }
+    .section {
+        width: 100vw;
+    }
+    .key-behaviors-list {
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .key-behaviors-list>li {
+        width: 356px;
+    }
+    .icon-kb {
+        display: none;
+    }
+    .key-behaviors-header {
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 111.111% */
+        letter-spacing: 0.72px;
+        margin: 0;
+        padding-bottom: 8px;
+    }
+    .key-behaviors-text {
+        margin: 0;
+    }
+    .team-members {
+        padding-top: 96px;
+        padding-bottom: 96px;
+       
+    }
+    .team-list {
+        flex-wrap: wrap;
+        margin-left: 108px;
+        margin-right: 108px;
+        justify-content: center;
+    }
+    .customers {
+        padding-bottom: 96px;
+    }
+    .customer-icons {
+        display: flex;
+        margin-left: 108px;
+        margin-right: 108px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
