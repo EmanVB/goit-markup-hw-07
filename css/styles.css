@@ -435,22 +435,36 @@ main{
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 24px;
     padding-top: 72px;
     text-align: center;
 }
-.team-list li {
+.team-list>li>img {
+    display: block;
+}
+.member-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: white;
+    width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-member {
     font-size: 20px;
     font-weight: 500;
+    margin: 0;
+    padding-top: 32px;
 }
 .team-position {
     color: var(--slate);
     font-size: 16px;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .team-socials-icons {
     width: 16px;
@@ -747,15 +761,15 @@ footer .footer-link:active{
     .section {
         width: 100vw;
     }
-    .key-behaviors-list {
-        flex-wrap: wrap;
-        width: 100vw;
-    }
-    .key-behaviors-list>li {
-        width: 356px;
-    }
     .icon-kb {
         display: none;
+    }    
+    .key-behaviors-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .key-behaviors-list>li {
+        width: calc(100%/2 - 24px);
     }
     .key-behaviors-header {
         font-family: Roboto;
@@ -777,9 +791,6 @@ footer .footer-link:active{
     }
     .team-list {
         flex-wrap: wrap;
-        margin-left: 108px;
-        margin-right: 108px;
-        justify-content: center;
     }
     .customers {
         padding-bottom: 96px;
@@ -790,6 +801,7 @@ footer .footer-link:active{
         margin-right: 108px;
         flex-wrap: wrap;
         justify-content: center;
+        flex-basis: calc(100%/3 - 1000px) ;
     }
     footer {
         display: flex;
