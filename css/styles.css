@@ -815,4 +815,7 @@ footer .footer-link:active{
         display: flex;
         flex-wrap: wrap;
     }
+    .subscribe {
+        justify-content: space-between;
+    }
 }
