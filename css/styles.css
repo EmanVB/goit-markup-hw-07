@@ -517,12 +517,6 @@ main{
 .customers {
     padding-bottom: 120px;
 }
-.footer-items {
-    /* display: flex;
-    padding-top: 101.5px;
-    padding-left: 156px;
-    padding-bottom: 100px; */
-}
 .footer-link {
     text-decoration: none;
     color: white;
@@ -534,16 +528,34 @@ main{
 .footer-link span{
     color: var(--iris);
 }
+.footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 17.5px;
+}
+.footer-items>div {
+    padding-top: 36px;
+}
 .offer {
     color: white;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
+    margin: 0;
 } 
 footer {
     background-color: var(--navy-blue);
-    /* align-items: center;
-    display: flex; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 312px;
+    gap: 80px;
 }
 footer .footer-link:hover,
 footer .footer-link:active{
@@ -558,16 +570,11 @@ footer .footer-link:active{
     letter-spacing: 0.32px;
     margin: 0px
 }
-.social-media{
-    padding-left: 120px;
-    padding-top: 24px;
-}
+
 .team-social-links-footer {
     display: flex;
-    justify-content: center;
     gap: 16px;
     padding-top: 16px;
-    padding-bottom: 72px;
 }
 .team-member-social-links {
     width: 40px;
@@ -580,18 +587,18 @@ footer .footer-link:active{
 .subscribe {
     display: flex;
     gap: 24px;
-    position: relative;
     color: white;
-    padding-left: 80px;
 }
-.subscribe>p {
-    position: absolute;
-    top: -40px;
+.subscribe-form{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe-form>p {
     margin: 0px;
     font-size: 16px;
     font-family: Roboto;
     font-weight: 500;
-
+    padding-bottom: 16px;
 }
 .subscribe-box {
     width: 264px;
@@ -622,7 +629,6 @@ footer .footer-link:active{
     width: 165px;
     height: 40px;
     background-color: var(--iris);
-    padding: 8px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -635,6 +641,7 @@ footer .footer-link:active{
     transition: 250ms;
     transition-property: border, background;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: auto;
 }
 .subscribe-button:hover {
     border: 1px solid --ocean;
@@ -791,6 +798,7 @@ footer .footer-link:active{
     }
     .team-list {
         flex-wrap: wrap;
+        width: ((100% / 2)-24px);
     }
     .customers {
         padding-bottom: 96px;
