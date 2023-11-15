@@ -829,7 +829,102 @@ footer .footer-link:active{
     .footer-items>div {
         padding-top: 0;
     }
-    }
     .subscribe {
         margin: 0;
     }
+}
+@media screen and (min-width: 429px) and (max-width: 768px){ 
+    main {
+        gap: 96px;
+    }
+    .header {
+        display: none;
+    }
+    .section {
+        width: 428px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        flex-direction: column;
+    }
+    .services {
+        display: none; 
+    }
+    .icon-kb {
+        display: none;
+    }
+    .service-offer {
+        height: 432px;
+        padding-top: 112px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-promise {
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 111.111% */
+        letter-spacing: 0.72px;
+        margin: 0;
+        padding-bottom: 72px;
+        display: flex;
+        justify-content: center;
+    }
+    .key-behaviors-list {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .key-behaviors-list>li {
+        width: auto;
+    }
+    .key-behaviors-header {
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 111.111% */
+        letter-spacing: 0.72px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 8px;
+    }.key-behaviors-text {
+        margin: 0;
+    }
+    .team-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .team-members {
+        flex-direction: column;
+    }
+    .customer-icons {
+        flex-wrap: wrap;
+    }
+    .customers {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        height: auto;
+        width: 428px;
+        justify-content: center;
+    }
+    .footer-left {
+        flex-direction: column;
+    }
+    .subscribe {
+        flex-direction: column;
+    }
+}
