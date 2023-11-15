@@ -687,6 +687,7 @@ footer .footer-link:active{
     gap: 24px;
     flex-wrap: wrap;
     padding-bottom: 120px;
+    padding-inline-start: 0;
 }
 .project-list li{
     border: 1px solid --cloud;
