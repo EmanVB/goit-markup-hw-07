@@ -671,12 +671,12 @@ footer .footer-link:active{
 .btns {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-inline-start: 0px;
     margin: 0;
     list-style-type: none;
     gap: 24px;
     padding-top: 96px;
-    padding-bottom: 72px;
 }
 .btn-links {
     color: var(--iris);
@@ -861,6 +861,7 @@ footer .footer-link:active{
         padding-bottom: 96px;
         height: auto;
         width: 100vw;
+        align-items: normal;
     }
     .footer-left
     {
@@ -873,6 +874,9 @@ footer .footer-link:active{
     }
     .footer-items>div {
         padding-top: 0;
+    }
+    .subscribe {
+        padding-left: 108px;
     }
     .subscribe>p {
         margin: 0;
@@ -920,7 +924,8 @@ footer .footer-link:active{
         right: 24px;
         top: 24px;
     }
-    .header {
+    .header,
+    .p-header {
         display: none;
     }
     .menu-toggle {
@@ -933,6 +938,7 @@ footer .footer-link:active{
     .mobile-header {
         display: flex;
         justify-content: center;
+        border: 1px solid var(--cornflower);
     }
     .js-close-menu:hover,
     .js-close-menu:active {
@@ -1094,6 +1100,7 @@ footer .footer-link:active{
         justify-content: center;
         padding-top: 96px;
         gap: 72px;
+       
     }
     .footer-left {
         flex-direction: column;
@@ -1140,7 +1147,8 @@ footer .footer-link:active{
         .subscribe-form,
         .add-email,
         .modal,
-        footer {
+        footer,
+        .btn-group {
             width: 100vw;
         }
         .form-box,
@@ -1152,6 +1160,14 @@ footer .footer-link:active{
         }
         .forms-submit{
            left: 76px;
+        }
+        .project-card,
+        .project-card>img,
+        .project-caption {
+            width: 100vw;
+        }
+        .project-card>img {
+            height: auto;
         }
     }
 }
