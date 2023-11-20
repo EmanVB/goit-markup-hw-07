@@ -12,7 +12,7 @@
 </head>
 </head>
 <body class="container">
-    <header class="header">
+    <header class="p-header">
         <div class="header-left">
             <a class="header-link" href="#Webstudio"><span>WEB</span>STUDIO</a>
             <nav class="header-links">
@@ -38,6 +38,70 @@
             </li>
         </ul>
     </header>
+
+    <header class="mobile-header">
+        <div class="mobile-container">
+            <a class="header-link" href="#Webstudio"><span>WEB</span>STUDIO</a>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="burger-icon">
+                    <use href="./images/icons.svg#hamburger"></use>
+                </svg>
+            </button>
+           
+        </div>
+    </header>
+
+    <div class="js-menu-container mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-container">
+            <button class="js-close-menu">&times</button>
+            <nav class="mobile- header-links">
+                <ul class="mobile-link-items">
+                    <li>
+                    <a class="mobile-links" href="index.html">Studio</a>
+                    </li>
+                    <li>
+                    <a class="mobile-links" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                    <a class="mobile-links" href="#Contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-bottom">
+                <ul class="mobile-contacts">
+                    <li class="mobile-contacts-item">
+                        <a class="menu-tel" href="tel:+110001111111">+11(000)111-11-11</a>
+                    </li>
+                    <li class="mobile-contacts-item">
+                        <a class="menu-email" href="info@devstudio.com">info@devstudio.com</a>
+                    </li>       
+                </ul>
+                <div class="team-social-links-mobile">
+                    <a class="team-member-social-links" href="#instagram">
+                        <svg class="footer-socials-icons">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    <a class="team-member-social-links" href="#twitter">
+                        <svg class="footer-socials-icons">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a class="team-member-social-links" href="#facebook">
+                        <svg class="footer-socials-icons">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="team-member-social-links" href="#linkedin">
+                        <svg class="footer-socials-icons">
+                            <use href="./images/icons.svg#icon-linkedin2"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <section class="btn-group">
             <ul class="btns">
@@ -173,53 +237,65 @@
 
     </main>
     <footer>
-        <div class="footer-items">
-            <div><a class="footer-link" href="#Webstudio"><span>WEB</span>STUDIO
-                </a>
+        <div class="footer-section">
+            <div class="footer-left">
+                <div class="footer-items">
+                    <div><a class="footer-link" href="#Webstudio"><span>WEB</span>STUDIO</a></div>             
+                    <p class="offer">Increase the flow of customers and <br>
+                                        sales for your business with digital <br>
+                                        marketing & growth solutions.
+                    </p>
+                    
+                </div>
+                <div class="social-media">
+                    <h3>Social Media</h3>
+                    <div class="team-social-links-footer">
+                        <a class="team-member-social-links" href="#instagram">
+                            <svg class="footer-socials-icons">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a class="team-member-social-links" href="#twitter">
+                            <svg class="footer-socials-icons">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="team-member-social-links" href="#facebook">
+                            <svg class="footer-socials-icons">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="team-member-social-links" href="#linkedin">
+                            <svg class="footer-socials-icons">
+                                <use href="./images/icons.svg#icon-linkedin2"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <p class="offer">Increase the flow of customers and <br>
-            sales for your business with digital <br>
-            marketing & growth solutions.
-            </p>
-        </div>
-        <div class="social-media">
-            <h3>Social Media</h3>
-            <div class="team-social-links-footer">
-                <a class="team-member-social-links" href="#instagram">
-                    <svg class="footer-socials-icons">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+            <div class="subscribe">
+                <div class="subscribe-form">
+                    <p>Subscribe</p>
+                    <form class="add-email">
+                        <label for="email">
+                            <input type="email" placeholder="Email" class="subscribe-box">
+                        </label>
+                    </form>
+                </div>
+                <button type="button" class="subscribe-button">Subscribe
+                    <svg class="subscribe-icon" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-frame"></use>
                     </svg>
-                </a>
-                <a class="team-member-social-links" href="#twitter">
-                    <svg class="footer-socials-icons">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-                <a class="team-member-social-links" href="#facebook">
-                    <svg class="footer-socials-icons">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-                <a class="team-member-social-links" href="#linkedin">
-                    <svg class="footer-socials-icons">
-                        <use href="./images/icons.svg#icon-linkedin2"></use>
-                    </svg>
-                </a>
+                </button>
             </div>
-        </div>
-        <div class="subscribe">
-            <p>Subscribe</p>
-            <form class="add-email">
-                <label for="email">
-                    <input type="email" placeholder="Email" class="subscribe-box">
-                </label>
-            </form>
-            <button type="button" class="subscribe-button">Subscribe
-                <svg class="subscribe-icon" width="24px" height="24px">
-                    <use href="./images/icons.svg#icon-frame"></use>
-                </svg>
-            </button>
-        </div>
-    </footer> 
+        </div>    
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js" type="text/javascript"></script>
 </body>
 </html>
