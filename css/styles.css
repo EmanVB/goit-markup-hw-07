@@ -862,8 +862,8 @@ footer .footer-link:active{
         height: auto;
         width: 100vw;
     }
-    .footer-left,
-    .subscribe {
+    .footer-left
+    {
         align-items: normal;
         width: 100vw;
         justify-content: space-between;
@@ -1093,6 +1093,7 @@ footer .footer-link:active{
         width: 100vw;
         justify-content: center;
         padding-top: 96px;
+        gap: 72px;
     }
     .footer-left {
         flex-direction: column;
